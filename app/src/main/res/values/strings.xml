@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">appBusonQuejas</string>
+    <string name="app_name">appBusonQuejas</string> //Cuidado con los String Morros :v Para que no alla confucion
+    <string name="login">Login</string>
 </resources>
