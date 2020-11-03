@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">appBusonQuejas</string> //Cuidado con los String Morros :v Para que no alla confucion
+    <string name="app_name">Buzon Itsva</string> //Cuidado con los String Morros :v Para que no alla confucion
     <string name="login">Login</string>
+    <string name="correo_institucional">Correo Institucional</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
 </resources>
