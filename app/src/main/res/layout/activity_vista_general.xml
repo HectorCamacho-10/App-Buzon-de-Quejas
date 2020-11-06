@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".vistaGeneralActivity">
 
+    <TextView
+        android:layout_width="206dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="124dp"
+        android:text="Bienvenido usuario"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="248dp"
+        android:text="Añadir un reporte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:text="Mis reportes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/splashscreen" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="71dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@mipmap/logo_tecnm" />
 </androidx.constraintlayout.widget.ConstraintLayout>
