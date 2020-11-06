@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //Logeo para proceder a iniciar el otro activity -Esto es temporal solo para ver el funcinamieto de la itnerfass
         log_in.setOnClickListener{
-            val iniciar = Intent (this, vistaGeneralActivity::class.java)
+            val iniciar = Intent (this, vista_general::class.java)
             startActivity(iniciar)
 
         }

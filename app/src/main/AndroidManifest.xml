@@ -9,12 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".foroActivity"/>
-        <activity android:name=".perfilActivity" />
-        <activity android:name=".vistaGeneralActivity" />
+        <activity
+         android:name=".vista_general"
+         android:label="@string/title_activity_vista_general"
+         android:theme="@style/AppTheme">
+        </activity>
+
+
         <activity android:name=".registroActivity" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/SplashTheme"> <!--SplashScreen este puede estar en todas las pantallas de carga si es nesesario -->
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme"> <!-- SplashScreen este puede estar en todas las pantallas de carga si es nesesario -->
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
