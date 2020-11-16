@@ -34,7 +34,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/fondo" />
+        app:srcCompat="@drawable/fondo"
+        android:contentDescription="@string/todo" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
@@ -56,7 +57,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camara"
+        android:text="@string/camara"
         app:layout_constraintEnd_toEndOf="@+id/text_gallery"
         app:layout_constraintStart_toEndOf="@+id/circleImageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -69,7 +70,8 @@
         app:layout_constraintEnd_toStartOf="@+id/circleImageView"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView"
@@ -77,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="#EFE80B"
-        android:text="985-115-29-00"
+        android:text="@string/_985_115_29_00"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
 
