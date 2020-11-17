@@ -1,5 +1,6 @@
 package com.dzul.appbusonquejas
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -13,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class vista_general : AppCompatActivity() {
 
@@ -23,7 +25,6 @@ class vista_general : AppCompatActivity() {
         setContentView(R.layout.activity_vista_general2)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
@@ -37,11 +38,18 @@ class vista_general : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.vista_general, menu)
+        aniadirReporte.setOnClickListener{
+            val inicializar = Intent(this, formularioReporte::class.java)
+            startActivity(inicializar)
+
+        }
         return true
     }
 
@@ -49,4 +57,5 @@ class vista_general : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
