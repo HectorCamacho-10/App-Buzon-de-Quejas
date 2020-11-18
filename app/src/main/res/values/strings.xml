@@ -22,4 +22,6 @@
     <string name="todoo">TODO</string>
     <string name="subir">Añadir</string>
     <string name="problema">Problema</string>
+    <string name="botton_registrarse">Registrarse</string>
+    <string name="botton_alta_usuario">Siguiente</string>
 </resources>
