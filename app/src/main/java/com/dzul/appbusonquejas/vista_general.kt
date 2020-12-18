@@ -46,7 +46,7 @@ class vista_general : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.vista_general, menu)
         aniadirReporte.setOnClickListener{
-            val inicializar = Intent(this, formularioReporte::class.java)
+            val inicializar = Intent(this, formularioReporte::class.java) //De home a formulario reporte
             startActivity(inicializar)
 
         }
