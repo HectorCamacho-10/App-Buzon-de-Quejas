@@ -48,7 +48,10 @@ class vista_general : AppCompatActivity() {
         aniadirReporte.setOnClickListener{
             val inicializar = Intent(this, formularioReporte::class.java)
             startActivity(inicializar)
-
+        }
+        misReportess.setOnClickListener{
+            val ini = Intent(this, misReportes::class.java)
+            startActivity(ini)
         }
         return true
     }

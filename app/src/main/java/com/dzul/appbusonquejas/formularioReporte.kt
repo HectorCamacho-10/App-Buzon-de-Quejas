@@ -3,6 +3,7 @@ package com.dzul.appbusonquejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -20,8 +21,10 @@ class formularioReporte : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulario_reporte)
+        val textoReporteContenido = findViewById<EditText>(R.id.textoReporte) as EditText
 
         val btnSi = findViewById<RadioButton>(R.id.radioButtonSi) as RadioButton
+
         btnSi.setOnClickListener(){
             textViewEdificio.isVisible = true
             textViewEdificio.text = "A"
@@ -40,6 +43,7 @@ class formularioReporte : AppCompatActivity() {
             bui.show()
             grupoDos.isVisible = true
         }
+
         radioButtonAula.setOnClickListener(){
 
             inputNombre.isVisible =false
@@ -56,14 +60,13 @@ class formularioReporte : AppCompatActivity() {
 
                 numeroEdificio= numero[which]
                 textViewNombre.text = numero[which]
-
-
-
             }
 
             opcionesAula.show()
 
         }
+
+
         radioButtonSala.setOnClickListener(){
             textViewNombre.isVisible = false
             inputNombre.isVisible =true
@@ -75,9 +78,13 @@ class formularioReporte : AppCompatActivity() {
             grupoDos.isVisible = false
             inputNombre.isVisible =false
             buttonAniadir.isVisible = true
+
+
         }
         buttonAniadir.setOnClickListener(){
             if (btnSi.isChecked == false){
+
+                Toast.makeText(this, textoReporteContenido.getText().toString(), Toast.LENGTH_SHORT).show()
                 val iniciar = Intent (this, vista_general::class.java)
 
                 val dialogo =  AlertDialog.Builder(this)
@@ -93,6 +100,11 @@ class formularioReporte : AppCompatActivity() {
             }
         }
 
+        buttonCancelar.setOnClickListener(){
+            val ini = Intent(this, vista_general::class.java)
+            startActivity(ini)
+        }
     }
+
 
 }
