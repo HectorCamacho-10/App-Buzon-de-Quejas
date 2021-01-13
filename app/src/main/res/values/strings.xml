@@ -22,4 +22,12 @@
     <string name="todoo">TODO</string>
     <string name="subir">Añadir</string>
     <string name="problema">Problema</string>
+    <string name="botton_registrarse">Registrarse</string>
+    <string name="botton_alta_usuario">Siguiente</string>
+    <string name="numero_de_control">Numero de Control</string>
+    <string name="password1">Password</string>
+    <string name="correo_institucional1">Correo Institucional</string>
+    <string name="registrarce">Registrarce</string>
+    <string name="atras">Atras</string>
+
 </resources>
