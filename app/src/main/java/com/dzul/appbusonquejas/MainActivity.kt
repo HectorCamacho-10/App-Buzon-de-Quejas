@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(iniciar)*/
 
            setup()
-           showhome(email = String(), provider = ProviderType.BASIC)
-           alerta()
+          // showhome(email = String(), provider = ProviderType.BASIC)
+           //alerta()
         }
        /////////////////////////////
 
