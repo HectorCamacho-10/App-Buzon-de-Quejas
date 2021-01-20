@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767882840144",
+    "project_id": "buzon-de-quejas-86f0e",
+    "storage_bucket": "buzon-de-quejas-86f0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767882840144:android:ed4de801f795f924ed2955",
+        "android_client_info": {
+          "package_name": "com.dzul.appbusonquejas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767882840144-mnva6psn62ou4sqcvrfi2cnnfq5bfn10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAirse3zFmtAfVkPCkSYL9jGDutld7z1z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767882840144-mnva6psn62ou4sqcvrfi2cnnfq5bfn10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

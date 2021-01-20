@@ -45,7 +45,7 @@ esto no significa que cadaves que se habra la app se tendran que logear, eso se 
         app:layout_constraintVertical_bias="0.363" />
 
     <Button
-        android:id="@+id/log_in"
+        android:id="@+id/boton_iniciar_secion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -132,7 +132,7 @@ esto no significa que cadaves que se habra la app se tendran que logear, eso se 
         app:srcCompat="@mipmap/logo_tecnm" />
 
     <Button
-        android:id="@+id/registrarce"
+        android:id="@+id/boton_registrarce"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
