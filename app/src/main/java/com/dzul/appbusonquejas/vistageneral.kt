@@ -47,10 +47,7 @@ class vistageneral : AppCompatActivity() {
             val initializer = Intent(this, formularioReporte::class.java) //De home a formulario reporte
             startActivity(initializer)
         }
-        misReportess.setOnClickListener{
-            val ini = Intent(this, misReportes::class.java)
-            startActivity(ini)
-        }
+
         return true
     }
 

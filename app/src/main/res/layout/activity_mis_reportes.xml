@@ -4,15 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".misReportes">
+    android:background="@mipmap/fondo_login"
+    tools:context=".mis_reportes">
 
-    <Button
-        android:id="@+id/regresarMenu"
-        android:layout_width="129dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="204dp"
-        android:text="Regresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

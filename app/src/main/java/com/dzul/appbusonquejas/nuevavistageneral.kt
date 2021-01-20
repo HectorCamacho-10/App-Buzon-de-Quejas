@@ -13,8 +13,8 @@ class nuevavistageneral : AppCompatActivity() {
 
 
         boton_mis_reportes.setOnClickListener {
-            val iniciar = Intent(this, misReportes::class.java)
-            startActivity(iniciar)
+            val iniciar0 = Intent(this, mis_reportes::class.java)
+            startActivity(iniciar0)
         }
 
       boton_anadir_reporte.setOnClickListener{
