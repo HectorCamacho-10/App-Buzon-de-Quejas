@@ -11,7 +11,7 @@ class misReportes : AppCompatActivity() {
         setContentView(R.layout.activity_mis_reportes)
 
         regresarMenu.setOnClickListener(){
-            val ini = Intent(this, vista_general::class.java)
+            val ini = Intent(this, vistageneral::class.java)
             startActivity(ini)
         }
 

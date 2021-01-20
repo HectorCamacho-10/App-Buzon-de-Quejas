@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_formulario_reporte.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class formularioReporte : AppCompatActivity() {
     private val opciones =  arrayOf("A","B","C","D","E","F")
@@ -85,7 +84,7 @@ class formularioReporte : AppCompatActivity() {
             if (btnSi.isChecked == false){
 
                 Toast.makeText(this, textoReporteContenido.getText().toString(), Toast.LENGTH_SHORT).show()
-                val iniciar = Intent (this, vista_general::class.java)
+                val iniciar = Intent (this, vistageneral::class.java)
 
                 val dialogo =  AlertDialog.Builder(this)
                 dialogo.setTitle("Estas Seguro?")
@@ -95,13 +94,13 @@ class formularioReporte : AppCompatActivity() {
                 dialogo.setMessage("Enviaras tus datos")
                  dialogo.show()
             }else{
-                val iniciar = Intent (this, vista_general::class.java)
+                val iniciar = Intent (this, vistageneral::class.java)
                 startActivity(iniciar)
             }
         }
 
         buttonCancelar.setOnClickListener(){
-            val ini = Intent(this, vista_general::class.java)
+            val ini = Intent(this, vistageneral::class.java)
             startActivity(ini)
         }
     }
