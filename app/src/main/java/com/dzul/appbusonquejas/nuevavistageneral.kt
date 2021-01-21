@@ -23,6 +23,8 @@ class nuevavistageneral : AppCompatActivity() {
         val email: String? = bundle?.getString("email")
         val provider: String? =bundle?.getString("provider")
 
+
+
         setup(email ?: "", provider ?: "")
 
         boton_mis_reportes.setOnClickListener {
@@ -31,7 +33,10 @@ class nuevavistageneral : AppCompatActivity() {
         }
 
       boton_anadir_reporte.setOnClickListener{
-          val iniciar1 = Intent(this,formularioReporte::class.java)
+
+          val iniciar1 = Intent(this,formularioReporte::class.java).apply {
+              putExtra("email", email)
+          }
           startActivity(iniciar1)
       }
 
@@ -54,10 +59,10 @@ class nuevavistageneral : AppCompatActivity() {
         textView5.text = email
         ProvedorTextView.text = provider
 
-        boton_cerrar_secion.setOnClickListener{
+        /*boton_cerrar_secion.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
-        }
+        }*/
 
 
     }

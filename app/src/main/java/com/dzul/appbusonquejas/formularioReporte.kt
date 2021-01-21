@@ -3,17 +3,20 @@ package com.dzul.appbusonquejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
+
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.quickstart.database.kotlin.models.bdclase
 import kotlinx.android.synthetic.main.activity_formulario_reporte.*
 
 class formularioReporte : AppCompatActivity() {
@@ -74,7 +77,6 @@ class formularioReporte : AppCompatActivity() {
 
         }
 
-
         radioButtonSala.setOnClickListener(){
             textViewNombre.isVisible = false
             inputNombre.isVisible =true
@@ -87,15 +89,16 @@ class formularioReporte : AppCompatActivity() {
             inputNombre.isVisible =false
             buttonAniadir.isVisible = true
 
-
         }
         buttonAniadir.setOnClickListener(){
-            val n = 0;
-          FirebaseDatabase.getInstance("https://buzon-de-quejas-86f0e-default-rtdb.firebaseio.com/" ).reference
-              .child("chat")
-              .child("nombre")
-              .child("er")
-              .setValue(textoReporteContenido.getText().toString())
+            val bundle: Bundle? = intent.extras
+            val email: String? = bundle?.getString("email")
+            val bd  = bdclase("usuario",textoReporteContenido.getText().toString(),edificio,numeroEdificio)
+            databasee.child("chat").child(bd.usuario.toString()).child(textoReporteContenido.getText().toString()).setValue(bd).addOnCanceledListener{
+                databasee.push().key
+            }
+
+
 
             if (btnSi.isChecked == false){
 
@@ -110,8 +113,9 @@ class formularioReporte : AppCompatActivity() {
                 dialogo.setMessage("Enviaras tus datos")
                  dialogo.show()
 
-            }else{
+            /*.setValue(textoReporteContenido.getText().toString())*/
 
+            }else{
 
                 val iniciar = Intent (this, nuevavistageneral::class.java)
                 startActivity(iniciar)
