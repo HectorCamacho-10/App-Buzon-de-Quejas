@@ -8,6 +8,12 @@ import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_formulario_reporte.*
 
 class formularioReporte : AppCompatActivity() {
@@ -17,12 +23,15 @@ class formularioReporte : AppCompatActivity() {
     private var defaltuuyN =0
     private var edificio = ""
     private  var numeroEdificio =""
+    private lateinit var databasee: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulario_reporte)
         val textoReporteContenido = findViewById<EditText>(R.id.textoReporte) as EditText
 
         val btnSi = findViewById<RadioButton>(R.id.radioButtonSi) as RadioButton
+        databasee = Firebase.database.reference
 
         btnSi.setOnClickListener(){
             textViewEdificio.isVisible = true
@@ -81,10 +90,17 @@ class formularioReporte : AppCompatActivity() {
 
         }
         buttonAniadir.setOnClickListener(){
+            val n = 0;
+          FirebaseDatabase.getInstance("https://buzon-de-quejas-86f0e-default-rtdb.firebaseio.com/" ).reference
+              .child("chat")
+              .child("nombre")
+              .child("er")
+              .setValue(textoReporteContenido.getText().toString())
+
             if (btnSi.isChecked == false){
 
                 Toast.makeText(this, textoReporteContenido.getText().toString(), Toast.LENGTH_SHORT).show()
-                val iniciar = Intent (this, vistageneral::class.java)
+                val iniciar = Intent (this, nuevavistageneral::class.java)
 
                 val dialogo =  AlertDialog.Builder(this)
                 dialogo.setTitle("Estas Seguro?")
@@ -93,14 +109,18 @@ class formularioReporte : AppCompatActivity() {
                 dialogo.setNegativeButton("Cancelar"){dialog, _->dialog.cancel()}
                 dialogo.setMessage("Enviaras tus datos")
                  dialogo.show()
+
             }else{
-                val iniciar = Intent (this, vistageneral::class.java)
+
+
+                val iniciar = Intent (this, nuevavistageneral::class.java)
                 startActivity(iniciar)
             }
         }
 
         buttonCancelar.setOnClickListener(){
-            val ini = Intent(this, vistageneral::class.java)
+
+            val ini = Intent(this, nuevavistageneral::class.java)
             startActivity(ini)
         }
     }
