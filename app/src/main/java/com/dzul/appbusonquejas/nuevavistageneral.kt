@@ -26,7 +26,7 @@ class nuevavistageneral : AppCompatActivity() {
         setup(email ?: "", provider ?: "")
 
         boton_mis_reportes.setOnClickListener {
-            val iniciar0 = Intent(this, mis_reportes::class.java)
+            val iniciar0 = Intent(this, busquedaActividad::class.java)
             startActivity(iniciar0)
         }
 
@@ -39,7 +39,10 @@ class nuevavistageneral : AppCompatActivity() {
       }
 
 
-
+        buscarbtn.setOnClickListener {
+            val comenzar = Intent(this, buscarReporte::class.java)
+            startActivity(comenzar)
+        }
 
 
         boton_Foro.setOnClickListener{

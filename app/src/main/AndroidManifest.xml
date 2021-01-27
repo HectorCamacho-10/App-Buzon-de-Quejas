@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Perfil"></activity>
+        <activity android:name=".busquedaActividad"></activity>
+        <activity android:name=".actualizar" />
+        <activity android:name=".buscarReporte" />
+        <activity android:name=".Perfil" />
         <activity
             android:name=".vista_general"
             android:label="@string/title_activity_vista_general" />
