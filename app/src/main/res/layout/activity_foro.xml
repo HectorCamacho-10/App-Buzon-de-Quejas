@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/fondo_login"
+
     tools:context=".foro">
 
     <ImageView
@@ -29,7 +30,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
 
     <ImageButton
@@ -43,7 +46,10 @@
         app:layout_constraintEnd_toStartOf="@+id/boton_Foro"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/hogar" />
+        app:srcCompat="@mipmap/hogar"
+        android:background="@color/md_grey_400"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
 
     <ImageButton
         android:id="@+id/boton_Foro"
@@ -55,7 +61,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imageButton2"
         app:layout_constraintStart_toEndOf="@+id/Boton_Home"
-        app:srcCompat="@mipmap/discusion" />
+        app:srcCompat="@mipmap/discusion"
+        android:background="@color/md_grey_400"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+
+        />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -67,7 +77,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/boton_Foro"
-        app:srcCompat="@mipmap/usuario" />
+        app:srcCompat="@mipmap/usuario"
+        android:background="@color/md_grey_400"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
