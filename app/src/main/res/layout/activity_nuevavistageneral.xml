@@ -81,8 +81,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="178dp"
-        android:layout_height="19dp"
+        android:layout_width="177dp"
+        android:layout_height="23dp"
         android:layout_marginStart="65dp"
         android:layout_marginEnd="26dp"
         android:text="Correo"
