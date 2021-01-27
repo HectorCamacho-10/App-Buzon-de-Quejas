@@ -25,7 +25,7 @@ class Perfil : AppCompatActivity() {
         }
 
 
-        Boton_Perfil.setOnClickListener{
+        boton_Perfil.setOnClickListener{
             val iniciar3 = Intent(this, Perfil::class.java)
             startActivity(iniciar3)
         }

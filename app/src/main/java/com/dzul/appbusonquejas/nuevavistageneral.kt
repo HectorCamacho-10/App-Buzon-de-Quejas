@@ -3,8 +3,6 @@ package com.dzul.appbusonquejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_nuevavistageneral.*
 
 
@@ -56,7 +54,7 @@ class nuevavistageneral : AppCompatActivity() {
         }
 
 
-        Boton_Perfil.setOnClickListener{
+        boton_Perfil.setOnClickListener{
             val iniciar3 = Intent(this, Perfil::class.java)
             startActivity(iniciar3)
         }

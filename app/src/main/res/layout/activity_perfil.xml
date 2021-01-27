@@ -15,7 +15,7 @@
         android:layout_marginStart="324dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/Boton_Perfil"
+        app:layout_constraintBottom_toTopOf="@+id/boton_Perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fondo_registro" />
@@ -41,12 +41,12 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Boton_Perfil"
+        app:layout_constraintEnd_toStartOf="@+id/boton_Perfil"
         app:layout_constraintStart_toEndOf="@+id/Boton_Home"
         app:srcCompat="@mipmap/discusion" />
 
     <ImageButton
-        android:id="@+id/Boton_Perfil"
+        android:id="@+id/boton_Perfil"
         android:layout_width="51dp"
         android:layout_height="56dp"
         android:layout_marginStart="50dp"

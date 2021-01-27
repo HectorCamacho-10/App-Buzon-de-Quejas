@@ -25,6 +25,8 @@ class foro : AppCompatActivity() {
             startActivity(iniciar3)
         }*/
 
+
+
         boton_Foro.setOnClickListener{
             val iniciar2 = Intent(this, foro::class.java)
             startActivity(iniciar2)
@@ -36,7 +38,10 @@ class foro : AppCompatActivity() {
             startActivity(iniciar2)
         }
 
-
+       imageButton2.setOnClickListener{
+           val iniciar3 = Intent( this, Perfil::class.java)
+           startActivity(iniciar3)
+}
 
 
 
