@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
 import androidx.appcompat.app.AlertDialog
-import com.dzul.appbusonquejas.ui.home.HomeFragment
-import com.dzul.appbusonquejas.ui.home.HomeViewModel
+
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 

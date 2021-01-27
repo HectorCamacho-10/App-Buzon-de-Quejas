@@ -42,13 +42,24 @@ class nuevavistageneral : AppCompatActivity() {
 
 
 
-        boton_foro.setOnClickListener{
+
+
+        boton_Foro.setOnClickListener{
             val iniciar2 = Intent(this, foro::class.java)
             startActivity(iniciar2)
         }
         //Aqui boton Perfil Aun no creado Activity (Perfil no necesario)
 
+        Boton_Home.setOnClickListener{
+            val iniciar2 = Intent(this, nuevavistageneral::class.java)
+            startActivity(iniciar2)
+        }
 
+
+        Boton_Perfil.setOnClickListener{
+            val iniciar3 = Intent(this, Perfil::class.java)
+            startActivity(iniciar3)
+        }
 
 
     }
