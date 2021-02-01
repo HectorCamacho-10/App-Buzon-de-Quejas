@@ -37,9 +37,11 @@ class busquedaActividad : AppCompatActivity() {
                 buscarDatoss = rrBc
                 Toast.makeText(this, "Buscando", Toast.LENGTH_SHORT).show()
                 buscarr()
-                eeProblema.setHint(hintProblema)
+
+                //eeProblema.setHint(hintProblema)
                 eeUbicacio.setHint(hintUbicacion)
                 eeEdificio.setHint(hintEdificio)
+
 
                     botonActualizar.setOnClickListener {
                         actualizar()
